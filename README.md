@@ -1,4 +1,17 @@
-# Time Complexity:
+# Table Of Contents
+
+1. [Time Complexity](#TimeComplexity)
+2. [Space Complexity](#SpaceComplexity)
+3. [Pointers](#Pointers)
+4. [Structs](#Structs)
+5. [Essential Functions from <string.h>](#EssentialFunctionsfrom<string.h>)
+6. [Lists](#Lists)
+7. [Basic Operations on Binary Trees](#BasicOperationsonBinaryTrees)
+8. [Quicksort Algorithm](#QuicksortAlgorithm)
+9. [Mergesort Algorithm](#MergesortAlgorithm)
+10. [File Manipulation Functions](#FileManipulationFunctions)
+
+# Time Complexity
 
 **O(1) - Constant Time**
 
@@ -150,7 +163,7 @@ Example function:
   }
   ```
 
-# Space Complexity:
+# Space Complexity
 
 **O(1) - Constant Space**
 
