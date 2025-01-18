@@ -1,15 +1,15 @@
 # Table Of Contents
 
-1. [Time Complexity](#TimeComplexity)
-2. [Space Complexity](#SpaceComplexity)
+1. [Time Complexity](#Time Complexity)
+2. [Space Complexity](#Space Complexity)
 3. [Pointers](#Pointers)
 4. [Structs](#Structs)
-5. [Essential Functions from <string.h>](#EssentialFunctionsfrom<string.h>)
+5. [Essential Functions from <string.h>](#Essential Functions from <string.h>)
 6. [Lists](#Lists)
-7. [Basic Operations on Binary Trees](#BasicOperationsonBinaryTrees)
-8. [Quicksort Algorithm](#QuicksortAlgorithm)
-9. [Mergesort Algorithm](#MergesortAlgorithm)
-10. [File Manipulation Functions](#FileManipulationFunctions)
+7. [Basic Operations on Binary Trees](#Basic Operationson Binary Trees)
+8. [Quicksort Algorithm](#Quicksort Algorithm)
+9. [Mergesort Algorithm](#Mergesort Algorithm)
+10. [File Manipulation Functions](#File Manipulation Functions)
 
 # Time Complexity
 
