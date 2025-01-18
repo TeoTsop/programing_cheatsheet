@@ -1,7 +1,7 @@
 # Table Of Contents
 
-1. [Time Complexity](#Time Complexity)
-2. [Space Complexity](#Space Complexity)
+1. [Time Complexity](#Time_Complexity)
+2. [Space Complexity](#Space)
 3. [Pointers](#Pointers)
 4. [Structs](#Structs)
 5. [Essential Functions from <string.h>](#Essential Functions from <string.h>)
