@@ -1,4 +1,4 @@
-### Time Complexity:
+# Time Complexity:
 
 **O(1) - Constant Time**
 
@@ -150,7 +150,7 @@ Example function:
   }
   ```
 
-### Space Complexity:
+# Space Complexity:
 
 **O(1) - Constant Space**
 
@@ -221,7 +221,7 @@ Example:
   }
   ```
 
-### Pointers
+# Pointers
 
 Pointers are variables that store the memory address of another variable. They are powerful tools in C and C++ for dynamic memory management, function arguments, and data structures.
 
@@ -254,7 +254,7 @@ for (int i = 0; i < 3; i++) {
 10 20 30
 ```
 
-### Structs
+# Structs
 
 A `struct` (short for structure) is a user-defined data type that groups variables under a single name.
 
@@ -286,7 +286,7 @@ A `struct` (short for structure) is a user-defined data type that groups variabl
 - Organizes related data.
 - Can include pointers, arrays, and other structs.
 
-### Essential Functions from `<string.h>`
+# Essential Functions from `<string.h>`
 
    1. `strlen`: Returns the length of a string.
 
@@ -370,7 +370,7 @@ A `struct` (short for structure) is a user-defined data type that groups variabl
       if (strncmp("abc", "abd", 2) == 0) printf("First two characters are the same\n");
    ```
 
-### Lists
+# Lists
 
 Lists are dynamic data structures for storing sequential data. A **linked list** is a common implementation.
 
@@ -442,7 +442,7 @@ Lists are dynamic data structures for storing sequential data. A **linked list**
    }
    ```
 
-### Basic Operations on Binary Trees
+# Basic Operations on Binary Trees
 
 **1.Check if Empty:**
 
@@ -629,7 +629,7 @@ Lists are dynamic data structures for storing sequential data. A **linked list**
    Deleting 70 will replace it with its inorder successor (80), and 80 will be removed from the tree.
    Deleting 30 will replace it with 40 (since 30 has two children, and the minimum value in the right subtree is 40).
 
-### Quicksort Algorithm
+# Quicksort Algorithm
 
 **Definition:** Quicksort is a divide-and-conquer algorithm that partitions an array around a pivot element and recursively sorts the subarrays.
 
@@ -682,7 +682,7 @@ After sorting:
 
 ---
 
-### Mergesort Algorithm
+# Mergesort Algorithm
 
 **Definition:** Mergesort is a divide-and-conquer algorithm that splits the array into halves, recursively sorts them, and then merges the sorted halves.
 
@@ -740,3 +740,73 @@ After sorting:
 3 9 10 27 38 43 82
 ```
 
+# File Manipulation Functions
+
+**Opening a File:**
+
+Files can be opened in different modes:
+  --r: Read (file must exist).
+  --w: Write (creates a new file or truncates an existing one).
+  --a: Append (adds to the end of the file, creating it if it doesn't exist).
+  --r+: Read and write.
+  --w+: Write and read (overwrites existing content).
+  --a+: Append and read.
+
+  ```c
+  FILE *file = fopen("example.txt", "r"); 
+  if (!file) {
+     perror("Error opening file");
+  }
+  ```
+
+**Reading and Writing:**
+
+1. `fgets` for reading a line:
+
+  ```c
+  char buffer[100];
+  fgets(buffer, sizeof(buffer), file);
+  ```
+
+2. `fprintf` for writing:
+
+  ```c
+  FILE *file = fopen("output.txt", "w");
+  fprintf(file, "Hello World\n");
+  fclose(file);
+  ```
+
+3. `fscanf` for formatted input:
+
+  ```c
+  int x;
+  fscanf(file, "%d", &x);
+  ```
+
+4. `fputc` and `fgetc`: Write and read a single character.
+
+  ```c
+  fputc('A', file);
+  char c = fgetc(file);
+  ```
+
+5. `fwrite` and `fread`: Write and read binary data.
+
+  ```c
+  int numbers[] = {1, 2, 3};
+  fwrite(numbers, sizeof(int), 3, file);
+  fread(numbers, sizeof(int), 3, file);
+  ```
+
+6. `ftell` and `fseek`: Tell and move the file pointer.
+
+  ```c
+  long position = ftell(file); // Get current position
+  fseek(file, 10, SEEK_SET);   // Move to the 10th byte
+  ```
+
+7. `fclose`: Close the file when done.
+
+  ```c
+  fclose(file);
+  ```
